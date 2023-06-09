@@ -1,0 +1,160 @@
+*{
+    Margin:0;  
+    Padding:0;
+    Border:0;
+    }
+
+.car{
+    height:100vh;
+    width:100vw;
+    width:150%;
+    opacity: 0.2;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+
+.left-container{
+    position:relative;
+}
+.body-container{
+    display:flex;
+    height:100vh;
+    width:100vw;
+}
+
+.left-side{
+    background-color:#004aad;
+    width:50%;
+
+}
+.left-side:not(.car){
+    z-index:2;
+
+    
+}
+
+.logo{
+    width: 100%; 
+    position:absolute;
+   
+    z-index:15;
+    transform: translate(10%, -175%);
+}
+
+.afspraak{
+    background-color:white;
+    color:#004aad;
+    padding: 10px 35px;
+    border-radius:25px;
+    font-family: 'Arvo', serif;
+    text-transform:uppercase;
+    font-weight: 400;
+    font-size:38px;
+    margin-left:25%;
+    position:absolute;
+    z-index:10;
+}
+/* .logo img{
+    position:absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+    padding-top:15%;
+
+} */
+
+.right-side{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    align-items:stretch;
+    z-index:2
+   
+}
+
+.nav-item{
+    display:flex;
+    flex-direction:row;
+    background-color:#004aad;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow:6;
+}
+
+.nav-item:nth-of-type(even){
+    background-color:white;
+    color: #004aad;;
+}
+
+.nav-title{
+    margin-left:7.5%;
+    font-family: 'Arvo', serif;
+    text-transform:uppercase;
+    font-weight: 200;
+    font-size:42px;
+    text-align:left;
+    flex:1;
+}
+
+.nav-description{
+    margin-left:0% !important;
+    font-family: 'Arvo', serif;
+    text-align:left;
+    flex:1;
+
+}
+
+.description{
+    width: 44%;
+}
+.title{
+    width:0.5%;
+}
+/* calculator */
+
+.afvallijst{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:100vw;
+    background-color:#002fa7;;
+    row-gap:5vh;
+    column-gap:5vw;
+    color:#002fa7;
+
+}
+
+.afvalsoort{
+    width:25%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-basis:25%; */
+    background-color:white;
+}
+
+.quantity-button{
+    background-color:#002fa7;
+    color:white;
+    /* font-weight: 800; */
+    font-size: large;
+    width:5vw;
+    height:5vh;
+    border-radius:20px;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+.quantity-button:hover{
+    background:#003fdd;
+    transition:background 0.3s;
+}
+
+.button-section{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
